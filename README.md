@@ -3,4 +3,7 @@ This is a timed quiz in which the user will have a minute to answer 5 multiple-c
 Link: 
 
 Below is a gif of the the whole quiz in action:
+
+
+
 ![](assets/TimedQuizApp.gif)
