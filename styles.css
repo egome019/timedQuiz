@@ -11,6 +11,12 @@ header {
     top: 0;
 }
 
+#score {
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+}
+
 #timerP {
     margin: auto;
     padding: 5px;

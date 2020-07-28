@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed Quiz App</title>
 
-    <link href="reset.css" rel="stylesheet" type="text/css">
+    <!-- <link href="reset.css" rel="stylesheet" type="text/css"> -->
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
+        <p id="score">Score</p>
         <p id="timerP">Timer</p>
     </header>
     <section class="container">
         <section id="question-container" class="hide">
             <section id="questions">Question</section>
             <section id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button id="btn1" class="btn"></button>
+                <button id="btn2" class="btn"></button>
+                <button id="btn3" class="btn"></button>
+                <button id="btn4" class="btn"></button>
             </section>
             <hr>
-            <section id="Answer-rightwrong">Correct/Wrong</section>
+            <section>
+                <p id="Answer-rightwrong"></p>           
+            </section>
         </section>
         <section class="controls">
             <section id="controls-container">
@@ -32,7 +34,18 @@
                 <button id="start-btn" class="start-btn btn">Start</button>
             </section>
         </section>
+        <section class="controls">
+            <div id="lead-container" class="hide">
+                <form id="score-form" method="POST">
+                  <label for="score-text">Submit your score</label>
+                  <input type="text" placeholder="Initials" name="score-text" id="score-text" />
+                </form>
+                <p>High Scores:</p>
+                <ul id="score-list"></ul>
+                <button id="clear-btn" class="start-btn btn">Clear</button>
+            </div>
+        </section>
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
