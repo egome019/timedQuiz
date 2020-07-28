@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Quiz App</title>
+
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <p id="timerP">Timer</p>
+    </header>
+    <section class="container">
+        <section id="question-container" class="hide">
+            <section id="questions">Question</section>
+            <section id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </section>
+            <hr>
+            <section id="Answer-rightwrong">Correct/Wrong</section>
+        </section>
+        <section class="controls">
+            <section id="controls-container">
+                <h1>Code Quiz</h1>
+                <p>Try to answer the following questions to the best of your abilities. You will have a minute to answer all 5 questions, if you get any of the questions wrong you will be deducted 5 seconds from the timer. The quiz is over once you complete all the questions or when you run out of time. Good Luck!</p>
+                <button id="start-btn" class="start-btn btn">Start</button>
+            </section>
+        </section>
+    </section>
+    
+</body>
+</html>
